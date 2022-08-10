@@ -1,0 +1,350 @@
+/*google fonts 
+font-family: 'Hind Madurai', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; 
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Poppins:wght@100;300;400&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100&display=swap'); */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* nav bar styling */
+#navbar {
+  overflow: hidden;
+  background-color: rgb(47, 43, 43);
+  z-index: 999;
+}
+#navbar a { 
+  float: left;
+  display: block;
+  color: #f8e9e9;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  width: 14%;
+  font-family: 'Hind Madurai', sans-serif;
+  font-size: 20px; 
+  font-weight: 300;
+  transition: color 0.3s ease;
+}
+#navbar a:hover {
+  color: rgb(178, 142, 162);
+}
+.content {
+  padding: 15px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/* landing page styling*/
+
+.landing-page {
+  background: #fce1e8;
+  padding: 60px 60px ;
+  color: rgb(39, 34, 34);
+  
+}
+.page-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 820px;
+}
+/* column left styling*/
+.column-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.column-left h1 {
+  font-size: 90px;
+}
+.column-left h4{
+  font-size: 30px;
+}
+.column-left p {
+  font-size: 25px;
+  line-height: 2.3;
+}
+.column-left .button {
+  background-color: rgb(138, 83, 83);
+  color: rgb(190, 185, 180);
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 20px 45px;
+  border-radius: 40px;
+  transition: transform .4s;
+}
+.button :hover {
+  transform: scale(1.2);
+}
+/* column right styling*/
+.column-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bio-img {
+  width: 80%;
+  height: 100%;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1100px) {
+  .landing-page {
+    padding: 30px;
+  }
+  .page-section {
+    grid-template-columns: 1fr;
+  }
+  .column-left h1 {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .page-section {
+    grid-template-rows: 600px;
+  }
+  .column-left h1 {
+    font-size: 32px;
+  }
+}
+
+/* About Section */
+.about-section {
+  padding: 60px 60px;
+  background: #f5dbe1;
+  color: rgb(64, 60, 60);
+}
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.about-container h1 {
+  font-size: 100px;
+  color: rgb(75, 53, 53);
+  -webkit-text-fill-color: transparent; 
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(58, 55, 55);
+  margin-bottom: 32px;
+}
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 700px;
+}
+.about-text {
+  padding-right: 20px;
+}
+.about-text h4 {
+  font-size: 30px;
+  line-height: 2.0;
+  margin-bottom: 32px;
+}
+.about-text h2 {
+  font-size: 40px;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+.about-text h5 {
+  line-height: 2.0;
+  margin-bottom: 32px;
+  font-weight: bold;
+}
+.about-text p {
+  line-height: 2.3;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+}
+
+.about-img {
+  width: 520px;
+  height: 610px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1000px) {
+  .about-section {
+    padding: 30px;
+  }
+  .about-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .about-image {
+    margin-top: 40px;
+  }
+
+  .about-container h1 {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .about-text h2 {
+    font-size: 32px;
+  }
+
+  .about-img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Portfolio Section */
+
+.portfolio {
+  background: #a99fa5;
+  color: rgb(176, 169, 169);
+}
+.portfolio-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 60px;
+}
+.button {
+  background-color: rgb(222, 204, 204);
+  color: rgb(242, 235, 228);
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  border: 0.5px solid;
+  font-weight: bold;
+  padding: 1px 1px;
+  border-radius: 2px;
+  transition: transform .3s;
+}
+.button :hover {
+  transform: scale(1.1);
+}
+.portfolio-container h1 {
+  font-size: 70px;
+  color: black;
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: rgb(51, 49, 49);  
+  margin: auto;
+  width: 27.5%;
+}
+.portfolio-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+/* styling right section of portfolio*/
+.portfolio-left {
+  padding: 40px 80px 20px 120px;
+  justify-content: center;
+}
+/* styling bootstrap card*/
+.bg-secondary {
+  text-align: center;
+  font-size:25px;
+}
+.card-text {
+  font-size:18px;
+}
+/* styling right section of portfolio*/
+.portfolio-right {
+  padding: 40px 10px 20px 100px;
+  justify-content: center;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1000px) {
+  .portfolio {
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .portfolio-container h1 {
+    font-size: 70px;
+  }
+
+  .portfolio-main {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-container {
+    padding-left: 50px;
+  }
+
+  .portfolio-right {
+    padding-left: 50px;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .portfolio {
+    padding: 10px;
+  }
+
+  .portfolio-container h1 {
+    font-size: 40px;
+  }
+}
+
+/* Contact */
+.contact {
+  display: flex;
+  align-items: center;
+  background: #b5b7b7;
+  padding: 100px 0;
+  font-family: 'Hind Madurai', sans-serif;
+}
+
+.footer {
+  background: #677a84;
+  color: #fff;
+}
+
+.footer-container {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-content h5 {
+  margin-bottom: 24px;
+  line-height: 2;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2em;
+}
+.footer-content h6 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer-container {
+    padding: 60px 24px;
+    grid-template-columns: 1fr;
+  }
+}
+
+
