@@ -15,6 +15,8 @@
 
 - A Portfolio to showcase what i have learned so far.
 
+- A fully responsive portfolio that can adjust to multiple screen sizes.
+
 - In the Projects page of the Portfolio, links for github repositories can be found. 
 
 
