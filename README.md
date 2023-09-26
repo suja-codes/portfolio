@@ -3,7 +3,7 @@
 <br>
 
 <div align="center" id="top"> 
-<img src = "./images/about.png" width='400'/>
+<img src = "./images/biopic.png" width='400'/>
 </div>
 
 <br>
