@@ -12,7 +12,7 @@ font-family: 'Roboto', sans-serif;
   font-family: 'Poppins', sans-serif;
 }
 
-/* nav bar styling */
+/* --------------------------  nav bar styling --------------------  */
 #navbar {
   overflow: hidden;
   background-color: rgb(47, 43, 43);
@@ -46,10 +46,10 @@ font-family: 'Roboto', sans-serif;
   padding-top: 60px;
 }
 
-/* landing page styling*/
+/* ----------------------  landing page styling --------------------- */
 
 .landing-page {
-  background: #fce1e8;
+  background: #f4e6e9;
   padding: 60px 60px ;
   color: rgb(39, 34, 34);
   
@@ -77,8 +77,8 @@ font-family: 'Roboto', sans-serif;
   line-height: 2.3;
 }
 .column-left .button {
-  background-color: rgb(138, 83, 83);
-  color: rgb(190, 185, 180);
+  background-color: rgb(141, 113, 113);
+  color: rgb(212, 211, 210);
   text-decoration: none;
   border: 2px solid transparent;
   font-weight: bold;
@@ -97,7 +97,7 @@ font-family: 'Roboto', sans-serif;
   align-items: center;
 }
 .bio-img {
-  width: 80%;
+  width: 90%;
   height: 100%;
 }
 
@@ -123,62 +123,62 @@ font-family: 'Roboto', sans-serif;
   }
 }
 
-/* About Section */
+/* -----------------------  About Section ----------------------  */
+
 .about-section {
-  padding: 60px 60px;
-  background: #f5dbe1;
+  padding: 85px 85px;
+  background: #eddbde;
   color: rgb(64, 60, 60);
 }
-.about-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 680px;
 }
-.about-container h1 {
+.about-section h1 {
   font-size: 100px;
   color: rgb(75, 53, 53);
   -webkit-text-fill-color: transparent; 
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: rgb(58, 55, 55);
-  margin-bottom: 32px;
+  margin-bottom: 0%;
 }
-.about-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 700px;
-}
-.about-text {
-  padding-right: 20px;
-}
-.about-text h4 {
-  font-size: 30px;
-  line-height: 2.0;
-  margin-bottom: 32px;
-}
-.about-text h2 {
-  font-size: 40px;
-  line-height: 1.5;
-  margin-bottom: 32px;
-}
-.about-text h5 {
-  line-height: 2.0;
-  margin-bottom: 32px;
-  font-weight: bold;
-}
-.about-text p {
-  line-height: 2.3;
-}
-
-.about-image {
+/* column left styling*/
+.about-column-left {
   display: flex;
+  flex-direction: column;
+  padding: 0px 100px 10px 10px;
+  justify-content: center;
+  align-items: center;
+}
+.about-column-left h3 {
+  font-size: 30px;
+  line-height: 3.0;
+}
+.about-column-left p {
+  line-height: 2.0;
+  font-size: 20px;
   justify-content: center;
 }
-
-.about-img {
-  width: 520px;
-  height: 610px;
+/* column right styling*/
+.about-column-right {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px 0px 100px;
+  justify-content: center;
+  align-items: center;
 }
-
+.about-column-right h2 {
+  font-size: 40px;
+  line-height: 2.5;
+  margin-bottom: 100px;
+}
+.about-column-right h5 {
+  line-height: 2.0;
+}
+strong {
+  font-size: 26px;
+}
 /* Media Queries */
 @media screen and (max-width: 1000px) {
   .about-section {
@@ -188,32 +188,24 @@ font-family: 'Roboto', sans-serif;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
-
-  .about-image {
-    margin-top: 40px;
-  }
-
-  .about-container h1 {
-    font-size: 70px;
-  }
 }
-
 @media screen and (max-width: 468px) {
-  .about-text h2 {
+  .about-column-left {
+    font-size: 22px;
+  }
+  .about-column-right h5 {
+    font-size: 22px;
+  }
+  .about-column-right h2 {
     font-size: 32px;
   }
-
-  .about-img {
-    width: 100%;
-    height: 100%;
-  }
 }
 
-/* Portfolio Section */
+/* ----------------------  Portfolio Section --------------------  */
 
 .portfolio {
-  background: #a99fa5;
-  color: rgb(176, 169, 169);
+  background: #bab6b8;
+  color: rgb(196, 195, 195);
 }
 .portfolio-container {
   padding-top: 100px;
@@ -240,7 +232,7 @@ font-family: 'Roboto', sans-serif;
   font-size: 70px;
   color: black;
   -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-width: 1.2px;
   -webkit-text-stroke-color: rgb(51, 49, 49);  
   margin: auto;
   width: 27.5%;
@@ -304,13 +296,20 @@ font-family: 'Roboto', sans-serif;
   }
 }
 
-/* Contact */
+/* --------------------------  Contact ----------------------  */
 .contact {
   display: flex;
   align-items: center;
   background: #b5b7b7;
-  padding: 100px 0;
-  font-family: 'Hind Madurai', sans-serif;
+  padding: 80px;
+}
+.contact h1 {
+  font-size: 70px;
+  -webkit-text-fill-color: transparent; 
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(58, 55, 55);
+  margin-bottom: 2px;
+  inline-size: 90%;
 }
 
 .footer {
@@ -319,7 +318,7 @@ font-family: 'Roboto', sans-serif;
 }
 
 .footer-container {
-  padding: 40px;
+  padding: 40px 40px;
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -331,7 +330,7 @@ font-family: 'Roboto', sans-serif;
 }
 .footer-content h5 {
   margin-bottom: 24px;
-  line-height: 2;
+  line-height: 1.5;
   font-family: 'Poppins', sans-serif;
   font-size: 2em;
 }
